@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">cinesjox</string>
+    <string name="title_activity_lst_peliculas">lstPeliculasActivity</string>
+    <string name="transitionName_picture">trasitionnamepicture</string>
+</resources>

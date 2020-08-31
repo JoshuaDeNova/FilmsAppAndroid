@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/aclonica</item>
+        <item>@font/alegreya_sc_black</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/arima_madurai_black</item>
+        <item>@font/assistant_semibold</item>
+        <item>@font/bad_script</item>
+        <item>@font/biorhyme_bold</item>
+        <item>@font/bitter_italic</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/changa_one_italic</item>
+        <item>@font/cherry_cream_soda</item>
+        <item>@font/fascinate</item>
+        <item>@font/faster_one</item>
+        <item>@font/fondamento_italic</item>
+        <item>@font/freckle_face</item>
+        <item>@font/hind_bold</item>
+        <item>@font/knewave</item>
+        <item>@font/miltonian_tattoo</item>
+        <item>@font/nothing_you_could_do</item>
+        <item>@font/spicy_rice</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

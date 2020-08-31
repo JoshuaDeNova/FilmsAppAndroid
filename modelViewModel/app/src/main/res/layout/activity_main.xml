@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.modelviewmodel.viewmodel.PeliculaViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackShadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#FF4B4B"
+            android:fontFamily="@font/fondamento_italic"
+            android:shadowColor="@color/colorBlackShadow"
+            android:text="Estrenos"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhiteIce"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/colorBlackShadow"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/search_edittext"
+                android:backgroundTint="@color/colorWhiteIce"
+                android:fontFamily="@font/aref_ruqaa"
+                android:hint=" Busqueda por Genero..."
+                android:text="@={model.genero}"
+                android:textColorHint="#302626" />
+
+            <Button
+                android:id="@+id/btnBusquedaGenero"
+                android:layout_width="37dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/lupa_1"
+                android:onClick="@{(v)->model.clickBusquedaGenero(v)}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorBlackShadow" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/edad"
+                android:onClick="@{(v)-> model.clickFiltroEdad(v)}"/>
+
+            <Button
+                android:layout_width="301dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlackShadow"
+                android:fontFamily="@font/fondamento_italic"
+                android:onClick="@{(v)-> model.clickOrderVotos(v)}"
+                android:text="Top mejor valoradas"
+                android:textColor="@color/colorWhiteIce"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:background="@color/colorBlackShadow"
+            android:gravity="center_horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="381dp"
+                android:layout_height="552dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:setAdapter="@{model.getRecyclerPeliculasAdapter}" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

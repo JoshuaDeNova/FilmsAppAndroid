@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="position"
+            type="Integer"/>
+
+        <variable
+            name="model"
+            type="com.example.modelviewmodel.viewmodel.PeliculaViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackShadow">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:orientation="horizontal"
+            app:cardBackgroundColor="@color/colorBlackShadow">
+
+            <LinearLayout
+                android:layout_width="375dp"
+                android:layout_height="594dp"
+                android:layout_gravity="center"
+                android:background="@color/colorBlackShadow"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="501dp"
+                    android:onClick="@{(v) -> model.clickDetail(v,model.getPeliculaAt(position))}"
+                    android:scaleType="fitXY"
+                    app:imagen="@{model.getPeliculaAt(position).imagen}" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>
