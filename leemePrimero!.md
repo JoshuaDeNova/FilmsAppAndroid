@@ -1,6 +1,4 @@
-
-
-# Foobar
+# App Cine
 
 Proyecto aplicación MobileFilms.
 
@@ -13,3 +11,5 @@ La aplicación está desarrollada con el patrón MVVM.
 
 Para el desarrollo del API se ha utiliado Java y springboot con la herramienta Intellij.
 La parte visual se ha desarrollado con kotlin en Android.
+
+La base de datos está generada con MySQL y está incluida.
