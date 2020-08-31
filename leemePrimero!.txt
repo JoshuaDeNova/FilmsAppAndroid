@@ -1,5 +1,5 @@
 
 
-Cines es la API creada con java y springboot. He usado la herramienta Intelllij
-modelViewModel es el nombre de la aplicaciÛn creada en Android.
-La base de datos tambiÈn est· incluida.
+Cines es la API creada con java y springboot. He usado la herramienta Intelllij.
+modelViewModel es el nombre de la aplicaci√≥n creada con Android utilizando kotlin.
+La base de datos tambi√©n est√° incluida.
