@@ -1,5 +1,15 @@
 
 
-Cines es la API creada con java y springboot. He usado la herramienta Intelllij.
-modelViewModel es el nombre de la aplicación creada con Android utilizando kotlin.
-La base de datos también está incluida.
+# Foobar
+
+Proyecto aplicación MobileFilms.
+
+## Descripción
+
+Pequeña aplicación con listado de peliculas y detalle. 
+La aplicación está desarrollada con el patrón MVVM.
+
+## Tecnologías
+
+Para el desarrollo del API se ha utiliado Java y springboot con la herramienta Intellij.
+La parte visual se ha desarrollado con kotlin en Android.
